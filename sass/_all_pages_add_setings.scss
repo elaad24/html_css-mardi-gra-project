@@ -1,0 +1,116 @@
+//genaric styles for all the pages
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#171717),
+    to(#303030)
+  );
+  background-image: linear-gradient(to right, #171717, #303030);
+}
+
+:root {
+  --whiteis: #f2f2f2;
+  --blackis: #0d0d0d;
+  --yellowis: #f2cc0f;
+  --greenis: #8cbf3f;
+  --purpleis: #9453a6;
+  --normal-font: "Pattaya", sans-serif;
+  --ugly-font: "Henny Penny", cursive;
+  --txt-font: "Roboto", sans-serif;
+}
+
+.marg-top {
+  margin-top: 1.2em;
+  margin-bottom: -12px;
+}
+
+.flag {
+  clear: both;
+  position: relative;
+  display: block;
+  height: 0.2em;
+  margin: 0.3em auto 0 auto;
+  background: #e5c431;
+  margin-bottom: 0.5em;
+}
+.flag:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 33%;
+  height: 100%;
+  background: #7033ac;
+}
+.flag:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 33%;
+  height: 100%;
+  background: #239e33;
+}
+
+.reverse_flag {
+  clear: both;
+  position: relative;
+  display: block;
+  height: 0.2em;
+  margin: 0.3em auto 0 auto;
+  background: #e5c431;
+  margin-bottom: 0.5em;
+}
+
+.reverse_flag:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 33%;
+  height: 100%;
+  background: #7033ac;
+}
+
+.reverse_flag:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 33%;
+  height: 100%;
+  background: #239e33;
+}
+
+.space {
+  height: 5em;
+}
+
+.header_h2 {
+  width: 17em;
+  margin: 0 auto;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.705);
+  z-index: 995;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}

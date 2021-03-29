@@ -1,0 +1,88 @@
+.site_box {
+  padding: 1em;
+  margin: 1em;
+}
+
+.grandfather_to_about_txt div p {
+  color: var(--whiteis);
+  font-family: var(--txt-font);
+  font-size: 1em;
+}
+
+#about_part_1 {
+}
+#about_part_2 {
+}
+#about_part_3 {
+}
+#about_part_4 {
+}
+
+.about_miniSection_title2 {
+  color: var(--purpleis);
+  font-family: var(--normal-font);
+  font-size: 1.8em;
+  text-align: center;
+}
+#img_beads {
+  box-sizing: border-box;
+  width: 10em;
+  height: 11em;
+  transform: rotate(90deg);
+}
+#img_krewe {
+  box-sizing: border-box;
+  width: 15em;
+  height: 11em;
+}
+
+.parallex_ChildMusium_1 {
+  background-image: url("media/childeren\ musim_ed1.jpg");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 22%;
+  height: 25em;
+  width: 30%;
+  margin: 10em 0px;
+  position: absolute;
+  right: 0;
+  bottom: -30em;
+}
+
+.parallex_walkOn_ad {
+  background-image: url("media/walkon_ad.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  height: 35em;
+  width: 20%;
+  margin: 10em 0px;
+  position: absolute;
+  top: 110em;
+}
+
+.ritz_ad img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .grandfather_to_about_txt {
+    font-size: 0.6em;
+  }
+
+  .parallex_ChildMusium_1 {
+    display: none;
+  }
+
+  .parallex_walkOn_ad {
+    display: none;
+  }
+}
+
+@media (max-width: 290px) {
+  .grandfather_to_about_txt {
+    font-size: 0.8em;
+  }
+}

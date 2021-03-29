@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <!-- start botstrap links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- end botstrap links -->
+    <!-- start main page animations link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- end main page animations links -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- icon for the top  -->
+    <link rel='shortcut icon' href='icons/extara_small_logo.png'>
+    <!-- end of icon for the top  -->
+    <!-- start google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <!-- end google fonts  -->
+    <!-- latest update for main was at this spot -->
+    <!-- start link & script for store animations  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- the scroll down animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--the scroll down animation script  -->
+    <!-- start link & script for store animations  -->
+    <!-- latest update for store page  was at this spot -->
+
+    <!-- start google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- end google fonts  -->
+    <!-- <link rel="stylesheet" href="sass/main.css"> -->
+    <!-- need to move to all !!!! -->
+    <!--  <link rel="stylesheet" href="./sass/all.min.css">-->
+    css">
+    <title> - - - - </title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            background-image: -webkit-gradient(linear, left top, right top, from(#171717), to(#303030));
+            background-image: linear-gradient(to right, #171717, #303030);
+        }
+
+        .upper {
+            /*  border: 2px solid black; */
+            height: 125px;
+        }
+
+        #extra_Small_logo {
+            height: 4em;
+            width: 5em;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: black;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: europa, sans-serif;
+        }
+
+        ul.navbar-nav li a {
+            font-family: 'Henny Penny', cursive;
+
+        }
+
+        .tmlTopBar_icon {
+            width: 2em;
+            height: 2em;
+        }
+
+        #navbarNav>ul>li>a {
+            border-right: 2px solid rgba(167, 162, 162, 0.678);
+            padding-right: 3em;
+
+
+
+        }
+
+        .movie_container {
+            position: absolute;
+            z-index: -1;
+            margin: 0 auto;
+            top: 0px;
+            border-radius: 7%;
+            overflow: hidden;
+            width: 30em;
+            left: 0;
+            right: 0;
+            top: 5em;
+        }
+
+        .backgroundVideo {
+            width: 30em;
+        }
+
+        .fade-out {
+            animation: fadeOut ease 3s;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            65% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        .main_upper_container {
+            width: 30%;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 30%;
+            margin: 0 auto;
+            box-sizing: border-box;
+
+
+        }
+
+        .placeholder {
+            display: flex;
+            width: 30em;
+            height: 56.25em;
+            z-index: 0;
+            justify-content: center;
+            align-items: center;
+            margin-left: 3%;
+            margin-right: 3%;
+            box-sizing: border-box;
+
+
+        }
+
+        .first_look_txt {
+            width: fit-content;
+            align-content: center;
+            z-index: -2;
+
+        }
+
+        .scrol_down_icon img {
+            width: 4em;
+            height: 4em;
+            margin-left: 50%;
+        }
+
+        :root {
+            --whiteis: #f2f2f2;
+            --blackis: #0d0d0d;
+            --yellowis: #f2cc0f;
+            --greenis: #8cbf3f;
+            --purpleis: #9453a6;
+            --normal-font: 'Pattaya', sans-serif;
+            --ugly-font: 'Henny Penny', cursive;
+
+        }
+
+        .first_look_txt h2 {
+            color: var(--greenis);
+            font-family: 'Pattaya', sans-serif;
+            font-size: 3em;
+            letter-spacing: 400;
+            animation-delay: 7.5s;
+            display: block;
+        }
+
+        .first_look_txt p {
+            width: fit-content;
+            color: var(--purpleis);
+            margin-left: 25%;
+            font-family: 'Pattaya', sans-serif;
+            font-size: 1.8em;
+            animation-delay: 7.7s;
+
+
+        }
+
+        .fade-in_sub_title {
+            animation: fadeIn ease 3s;
+        }
+
+        @keyframes in_sub_title {
+            0% {
+                opacity: 0;
+            }
+
+            95% {
+                opacity: 0.1;
+            }
+
+            30% {
+                opacity: 1;
+                display: none;
+            }
+        }
+
+        .mardiGrasEvent_outside_container {
+            position: relative;
+            bottom: 4em;
+            height: 20px;
+            z-index: 5;
+            align-items: center;
+        }
+
+        .mardiGrasEvent_Box {
+            z-index: 6;
+            align-content: center;
+            position: relative;
+            bottom: 0%;
+        }
+
+        .mardiGrasEvent_outside_container h2 {
+            color: #fff;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .mardiGrasEvent_Box ul {
+            position: absolute;
+            left: 25%;
+
+
+        }
+
+        .mardiGrasEvent_Box ul li {
+            float: left;
+            width: 25em;
+            height: 25em;
+            border: 7px var(--blackis);
+            border-style: double;
+            margin: 20px;
+            display: block;
+            flex-direction: column;
+            display: flex;
+
+        }
+
+
+        .mardiGrasEvent_Box ul li:hover a {
+            display: block;
+        }
+
+        .mardiGrasEvent_Box ul li h3 :nth-child(1) {
+            font-size: 1em;
+            color: var(--greenis);
+        }
+
+        .mardiGrasEvent_Box ul li h3 :nth-child(2) {
+            font-size: 1.7em;
+            border-bottom: 1px solid var(--purpleis);
+        }
+
+        .mardiGrasEvent_Box ul li h3 {
+            color: var(--yellowis);
+            font-family: var(--normal-font);
+            text-align: center;
+            margin: 0;
+        }
+
+
+        .mardiGrasEvent_Box ul li p {
+            color: var(--greenis);
+            font-family: var(--normal-font);
+            text-align: center;
+
+            font-size: 1.6em;
+
+        }
+
+        .mardiGrasEvent_Box ul li p:nth-of-type(2) {
+            color: var(--yellowis);
+            font-family: var(--normal-font);
+            text-align: center;
+
+
+        }
+
+        .marg-top {
+            margin-top: 1.2em;
+            margin-bottom: -12px;
+        }
+
+        .mardiGrasEvent_Box ul li a {
+            font-size: 1.3em;
+            font-family: var(--normal-font);
+            color: var(--whiteis);
+            /*   border:white 2px solid; */
+            margin: 1em 2.5em 0em 2.5em;
+            letter-spacing: 2px;
+            display: none;
+
+        }
+
+        .mardiGrasEvent_Box ul li a:nth-of-type(1) {
+            border-bottom: var(--whiteis) 2px solid;
+        }
+
+
+
+        /* update for the class */
+        .mardiGrasEvent_outside_container {
+            bottom: 20em;
+            animation: fadeIn step-end 8.5s;
+
+        }
+
+        .body_section {
+            margin-top: 3em;
+            width: 30%;
+            height: auto;
+        }
+
+        .covid_warning {
+            width: 50em;
+            background-color: #fafa92;
+            border-top: 8px solid var(--greenis);
+            border-bottom: 8px solid var(--greenis);
+            border-bottom-right-radius: 1.9em;
+            border-top-left-radius: 1.9em;
+            display: block;
+            /* margin: 0 auto; */
+            left: 0;
+
+        }
+
+        .covid_warning h3 {
+            color: #d30f0f;
+            text-align: center;
+            border-bottom: 2px solid red;
+        }
+
+        .covid_warning p {
+            padding: 0px 1.1em 0px 1.1em;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: var(--blackis);
+
+        }
+
+        .covid_warning p a {
+            font-size: 1.4;
+            color: var(--purpleis);
+        }
+
+        .faq_teaser {
+            margin-top: 5em;
+            width: 50em;
+            border: white 2px solid;
+
+
+        }
+
+        .a_normal {
+            text-decoration: none;
+
+        }
+
+
+        .txt_color1 {
+            color: var(--purpleis);
+            font-size: 1.5em;
+        }
+
+        .txt_color2 {
+            color: var(--greenis);
+            font-size: 1.0em;
+        }
+
+        .txt_color3 {
+            color: var(--yellowis);
+            font-size: 1.7em;
+        }
+
+        .mayor_teaser {
+            width: 20em;
+            height: 24.5em;
+            background-color: #fff;
+            position: absolute;
+            right: 20em;
+            top: 75.6em;
+            border-top: 5px solid var(--purpleis);
+            border-right: 5px solid var(--yellowis);
+            border-left: 5px solid var(--purpleis);
+
+
+        }
+
+        .flag {
+            clear: both;
+            position: relative;
+            display: block;
+            height: .2em;
+            margin: .3em auto 0 auto;
+            background: #e5c431
+        }
+
+        .flag:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 33%;
+            height: 30%;
+            background: #7033ac
+        }
+
+        .flag:after {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            width: 33%;
+            height: 30%;
+            background: #239e33
+        }
+
+        .mayor_teaser img {
+            margin-top: 1em;
+            margin-left: 25%;
+            margin-bottom: 1em;
+            box-shadow: 4px 0px 3px #000;
+
+        }
+
+        .mayor_teaser p {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .parallex {
+            background-image: url('media/parlex_background.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 25em;
+            margin: 3em 0px;
+
+        }
+
+        .sponsers_section {
+            margin-top: 5em;
+            width: 30%;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+
+        }
+
+
+        .grid_headline_hotls {
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+
+        .grid_headline_attractions {
+            grid-row: 1/2;
+            grid-column: 7/8;
+        }
+
+        .grid_headline_hotls span {
+            color: var(--whiteis);
+            font-size: 2em;
+        }
+
+        .grid_headline_attractions span {
+            color: var(--whiteis);
+            font-size: 2em;
+        }
+
+
+
+        .small_hotles__pics {
+            grid-row: 2/5;
+            grid-column: 1/5;
+            display: flex;
+            justify-content: center;
+        }
+
+        .small_attractions_pics {
+            grid-row: 2/5;
+            grid-column: 5/9;
+            display: flex;
+            left: 900px;
+            bottom: 30px;
+            justify-content: center;
+        }
+
+
+        .pics_types_of_groups {
+            display: flex;
+            margin: 0;
+
+        }
+
+        .pics_types_of_groups h2 {
+            color: var(--whiteis);
+        }
+
+        .small_pic {
+            margin-left: 0.7em;
+        }
+
+        .small_pic img {
+            width: 200px;
+            border-radius: 30%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .small_pic img:hover {
+            transition: all 0.23s ease-in-out;
+            border-radius: 3px;
+
+        }
+
+        .small_pic img {
+            width: 11em;
+            height: 13em;
+        }
+
+        .small_pic h5 {
+            color: var(--whiteis);
+            text-align: center;
+        }
+
+
+
+
+        .reverse_flag {
+            clear: both;
+            position: relative;
+            display: block;
+            height: .2em;
+            margin: .3em auto 0 auto;
+            background: #e5c431
+        }
+
+        .reverse_flag:before {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            width: 33%;
+            height: 30%;
+            background: #7033ac
+        }
+
+        .reverse_flag:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 33%;
+            height: 30%;
+            background: #239e33
+        }
+
+
+        .txt_color1:hover {
+            color: var(--purpleis);
+            border-width: 2px;
+            border-style: dashed;
+            border-top-color: var(--yellowis);
+            border-right-color: var(--purpleis);
+            border-bottom-color: var(--greenis);
+            border-left-color: var(--blackis);
+
+        }
+
+        .txt_color2:hover {
+            color: var(--greenis);
+            border-width: 2px;
+            border-style: dashed;
+            border-top-color: var(--purpleis);
+            border-right-color: var(--greenis);
+            border-bottom-color: var(--blackis);
+            border-left-color: var(--yellowis);
+
+        }
+
+        .txt_color3:hover {
+            color: var(--yellowis);
+            border-width: 2px;
+            border-style: dashed;
+            border-top-color: var(--greenis);
+            border-right-color: var(--blackis);
+            border-bottom-color: var(--yellowis);
+            border-left-color: var(--purpleis);
+
+        }
+
+        /* update for the class */
+        .faq_teaser {
+            margin-top: 5em;
+            width: 50em;
+            border: none;
+
+
+        }
+
+        /* update for the class  small_pic h4 */
+        .small_pic h5 {
+            color: var(--whiteis);
+            text-align: center;
+        }
+
+        /* update for the class */
+        .small_pic img {
+            width: 11em;
+            height: 13em;
+        }
+
+        /* update for the class */
+        .grid_headline_attractions {
+            grid-row: 1/2;
+            grid-column: 6/7;
+        }
+
+        /* update for the class */
+        .small_hotles__pics {
+            grid-row: 2/5;
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* update for the class */
+        .small_attractions_pics {
+            grid-row: 2/5;
+            grid-column: 4/9;
+            display: flex;
+            left: 900px;
+            bottom: 30px;
+            justify-content: center;
+        }
+
+        .poscard_popup {
+            position: fixed;
+            top: 4em;
+            display: none;
+            z-index: 5;
+
+        }
+
+
+
+        .poscard_popup img {
+            width: 13%;
+            height: 13%;
+        }
+
+
+        .popup_sponser {
+            height: 300px;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 8em;
+        }
+
+        .popup_location img {
+            width: 30%;
+        }
+
+        .popup_location {
+            height: 37em;
+            margin-bottom: 2em;
+        }
+
+        .popup_location p {
+
+            width: 25em;
+            color: white;
+            font-size: 3em;
+            margin: 0.5em 30%;
+            font-family: var(--normal-font);
+        }
+
+        .ritz_popup {
+            display: none;
+        }
+
+        .sheraton_popup {
+            display: none;
+        }
+
+        .walk_on_popup {
+            display: none;
+        }
+
+        .aca_popup {
+            display: none;
+        }
+
+        .kids_popup {
+            display: none;
+        }
+
+        .death_popup {
+            display: none;
+        }
+
+        .haunted_popup {
+            display: none;
+        }
+
+        .premium_parking_popup {
+            display: none;
+        }
+
+
+        .ritz_popup img {
+            border-radius: 50px;
+        }
+
+        .sheraton_popup img {
+            border-radius: 50px;
+        }
+
+        .walk_on_popup img {
+            border-radius: 50px;
+        }
+
+        .aca_popup img {
+            border-radius: 50px;
+        }
+
+        .kids_popup img {
+            border-radius: 50px;
+        }
+
+        .death_popup img {
+            border-radius: 50px;
+        }
+
+        .haunted_popup img {
+            border-radius: 50px;
+        }
+
+        .premium_parking_popup img {
+            border-radius: 50px;
+        }
+
+
+
+
+        .logo2021 {}
+
+        .logo2021 img {
+            height: 17em;
+            position: relative;
+
+        }
+
+
+        .header_h1 {
+            width: 22em;
+            margin: 0 auto;
+            margin-top: 2em;
+            text-align: center;
+            /* has change the last line */
+
+        }
+
+
+        .header_h1 h1 {
+            font-family: var(--normal-font);
+            font-size: 3.2em;
+            color: var(--whiteis);
+
+        }
+
+        .store {
+            margin-top: 3em;
+        }
+
+        .store h2 {
+            width: 30px;
+            margin: 0 auto;
+            margin-top: 3em;
+            color: var(--whiteis);
+            font-family: var(--ugly-font);
+        }
+
+        .store_item {
+            height: fit-content;
+            width: 30%;
+            margin: 2.5em 0px;
+            display: flex;
+        }
+
+        .store_item_info {
+            margin: 0px 1em;
+            background-color: var(--blackis);
+            width: 80%;
+            padding: 0.7em 1em;
+            box-sizing: border-box;
+            overflow: hidden;
+            height: fit-content;
+
+        }
+
+        .store_item_info a {
+            font-size: 2em;
+            font-family: var(--normal-font);
+            color: var(--purpleis);
+        }
+
+        .store_item_info a:hover {
+
+            color: var(--greenis);
+        }
+
+        .store_item_info p {
+            font-size: 1em;
+            color: var(--whiteis);
+        }
+
+        .store_item_info button a {
+            font-size: 1em;
+            font-family: tahoma;
+            color: var(--whiteis);
+        }
+
+        .inPage_Nave {
+
+            width: 22em;
+            margin: 0 auto;
+        }
+
+        .inPage_Nave h2 {
+            color: var(--greenis);
+            font-family: var(--ugly-font);
+            font-size: 1.7em;
+            margin: 1.7em 0px;
+        }
+
+        .NavObj {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .NavObj a {
+            font-size: 1.3em;
+            color: var(--blackis);
+            background-color: grey;
+            transition: background-color 250ms ease-out;
+            transition: color 250ms ease-out;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .NavObj a:hover {
+            color: var(--whiteis);
+            background-color: rgb(63, 62, 62);
+            position: relative;
+            top: 5px;
+        }
+
+        /* update for the class */
+        * {
+            scroll-behavior: smooth;
+        }
+
+
+        /* update for the class */
+        .flag {
+            margin-bottom: 0.5em;
+        }
+
+        /* update for the class */
+        .reverse_flag {
+            margin-bottom: 0.5em;
+        }
+
+
+        .parallex_right {
+            background-image: url('media/right_parelex.jpg');
+            background-attachment: fixed;
+            background-position: right;
+
+            background-repeat: no-repeat;
+            background-size: 65%;
+            height: 25em;
+            width: 30%;
+            margin: 3em 0px;
+            position: absolute;
+            right: 0;
+            bottom: -30em;
+
+
+        }
+
+
+        .parallex_left {
+            background-image: url('media/left_parlex.jpg');
+            background-attachment: fixed;
+            background-position: left;
+
+            background-repeat: no-repeat;
+            background-size: 18%;
+            height: 25em;
+            width: 18%;
+            margin: 3em 0px;
+            position: absolute;
+            top: 13em;
+        }
+
+        /*  <!-- all above is taken from test_store -->*/
+        /*  <!--didnt change anything there !!  -->*/
+
+
+
+        /* update for the class */
+        :root {
+            --txt-font: 'Roboto', sans-serif;
+        }
+
+        .site_box {
+            padding: 1em;
+            margin: 1em;
+
+
+
+        }
+
+        .grandfather_to_about_txt div p {
+            color: var(--whiteis);
+            font-family: var(--txt-font);
+            font-size: 1em;
+        }
+
+        #about_part_1 {}
+
+        #about_part_2 {}
+
+        #about_part_3 {}
+
+        #about_part_4 {}
+
+        .about_miniSection_title2 {
+            color: var(--purpleis);
+            font-family: var(--normal-font);
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        #img_beads {
+            box-sizing: border-box;
+            width: 3em;
+            height: 11em;
+            transform: rotate(90deg);
+        }
+
+        #img_krewe {
+            box-sizing: border-box;
+            width: 15em;
+            height: 11em;
+        }
+
+
+
+        .parallex_ChildMusium_1 {
+            background-image: url('media/childeren\ musim_ed1.jpg');
+            background-attachment: fixed;
+            background-position: right;
+
+            background-repeat: no-repeat;
+            background-size: 22%;
+            height: 25em;
+            width: 30%;
+            margin: 3em 0px;
+            position: absolute;
+            right: 0;
+            bottom: -30em;
+
+
+        }
+
+
+        .parallex_walkOn_ad {
+            background-image: url('media/walkon_ad.jpg');
+            background-attachment: fixed;
+            background-position: left;
+
+            background-repeat: no-repeat;
+            background-size: 20%;
+            height: 35em;
+            width: 20%;
+            margin: 3em 0px;
+            position: absolute;
+            top: 13em;
+        }
+
+
+
+        .ritz_ad img {
+            width: 30%;
+        }
+
+
+        .footer {
+
+            background-image: url("media/middle_breake.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            margin-bottom: 0.3em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+
+
+        .copyright {}
+
+        .copyright p {
+            font-size: 1.6em;
+
+
+
+        }
+
+
+        /* start DO NOT COPY !  bottom bar  */
+
+
+        .nav_item_bgc {
+
+            background-color: rgba(66, 66, 66, 0.849);
+            color: rgb(255, 255, 255);
+            letter-spacing: 0.5px;
+            padding: 2px;
+            border: double black 5px;
+            border-radius: 30% 0px 30% 0px;
+            font-family: var(--txt-font);
+            font-size: 1.25em;
+
+
+        }
+
+        .nav_tag_bottom {
+            margin-top: 2.75em;
+            margin-bottom: 1.5em;
+        }
+
+
+        .nav_item_bgc:hover {
+            text-decoration: none;
+            color: rgba(66, 66, 66, 0.849);
+            background-color: rgba(255, 255, 255);
+            border-color: rgba(66, 66, 66, 0.616);
+            text-decoration: underline solid white;
+
+        }
+
+
+
+        #logo2021 {
+            width: 14em;
+        }
+
+        .logo_txt {
+            color: var(--whiteis);
+            font-family: var(--txt-font);
+            font-size: 0.95;
+            margin-top: 0.5em;
+        }
+
+        /* end DO NOT COPY !  bottom bar   */
+        /* last save here */
+
+        @media(max-width:1000px) {
+            #first {
+                display: none !important;
+
+            }
+
+            .copyright p {
+                min-width: 220px;
+                ;
+            }
+        }
+
+        @media(max-width:700px) {
+            #logo2021 {
+                width: 10em;
+            }
+
+            #third a {
+                font-size: 1em;
+            }
+
+        }
+
+        @media(max-width:550px) {
+            #third {
+                display: none !important;
+
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- footer start  -->
+    <div style="margin-top: 10em;"></div>
+    <footer class="footer">
+        <div style="flex-grow: 10; display: flex;">
+
+
+
+            <div class=" flex-grow-1"></div>
+            <div id="first" class="bg-info" style="flex-grow: 2;">trivia</div>
+            <div class="row" style="flex-grow: 1;">
+
+
+
+
+
+
+
+
+                <div id="second" class=" flex-grow-1 mt-5"><img id="logo2021" src="./icons/logo2021.png" alt=""
+                        width="">
+                    <div>
+                        <p class="logo_txt">follow us on social media</p>
+                        <div>
+                            <a href="https://www.facebook.com/MardiGrasNewOrleans"
+                                class="  btn m-0 btn-outline-primary ">
+                                <i class="fab fa-2x fa-facebook"></i>
+
+                            </a>
+
+                            <a href="https://twitter.com/mardigrasnola" class="btn m-2 btn-outline-info">
+                                <i class="fab fa-2x fa-twitter-square"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"
+                                class="btn mr-2 btn-outline-danger">
+                                <i class="fab fa-2x fa-youtube"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/mardigrasneworleans/"
+                                class="btn m-0 btn-outline-warning">
+
+                                <i class="fab fa-2x fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div id="third" class=" p-1 d-flex  flex-grow-1 " style=" flex-direction: column; ">
+                    <div class=" mt-1" style="flex-grow: 1;"><b class="bg-light"> NAVIGATION</b></div>
+
+                    <div class=" d-flex" style="flex-grow: 12;">
+                        <div class=" flex-grow-1">
+
+                            <div class=" nav_tag_bottom"><a class=" nav_item_bgc" href="./store.html#hotels"> hotels</a>
+                            </div>
+                            <div class="nav_tag_bottom"><a class="  nav_item_bgc" href="./index.html">main page</a>
+                            </div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./index.html#covid_warning">covid
+                                    warning</a></div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./index.html#sponsers">our
+                                    recomendence</a></div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./about.html">history and
+                                    trudition</a></div>
+
+
+                        </div>
+
+
+                        <div class=" flex-grow-1">
+
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./faq.html">FAQ</a></div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./store.html">store</a></div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./contect.html">contact us </a>
+                            </div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./media.html">medie page</a>
+                            </div>
+                            <div class="nav_tag_bottom"><a class=" nav_item_bgc" href="./media.html#Videos">bit of mardi
+                                    gra</a></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex-grow-1"></div>
+
+
+        </div>
+
+
+
+        <div class=" copyright " style="flex-grow: 1">
+            <p>&copy; 2020 Copyright: <b>Elad Dadon</b></p>
+        </div>
+
+
+
+
+    </footer>
+    <!-- footer ends  -->
+</body>
+
+</html>

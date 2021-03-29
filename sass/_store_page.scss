@@ -1,0 +1,173 @@
+.header_h1 {
+  width: 22em;
+  margin: 0 auto;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.header_h1 h1 {
+  font-family: var(--normal-font);
+  font-size: 3.2em;
+  color: var(--whiteis);
+}
+.store {
+  margin-top: 3em;
+}
+.store h2 {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 3em;
+  color: var(--whiteis);
+  font-family: var(--ugly-font);
+}
+
+.store_item {
+  height: fit-content;
+  width: 100%;
+  margin: 2.5em 0px;
+  display: flex;
+}
+
+.store_item_info {
+  margin: 0px 1em;
+  background-color: var(--blackis);
+  width: 80%;
+  padding: 0.7em 1em;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.store_item_info a {
+  font-size: 2em;
+  font-family: var(--normal-font);
+  color: var(--purpleis);
+}
+
+.store_item_info a:hover {
+  color: var(--greenis);
+}
+.store_item_info p {
+  font-size: 1em;
+  color: var(--whiteis);
+}
+
+.store_item_info button a {
+  font-size: 1em;
+  font-family: tahoma;
+  color: var(--whiteis);
+}
+
+.inPage_Nave {
+  width: 22em;
+  margin: 0 auto;
+}
+
+.inPage_Nave h2 {
+  color: var(--greenis);
+  font-family: var(--ugly-font);
+  font-size: 1.7em;
+  margin: 1.7em 0px;
+}
+
+.NavObj {
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavObj a {
+  font-size: 1.3em;
+  color: var(--blackis);
+  background-color: grey;
+  transition: background-color 250ms ease-out;
+  transition: color 250ms ease-out;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.NavObj a:hover {
+  color: var(--whiteis);
+  background-color: rgb(63, 62, 62);
+  position: relative;
+  top: 5px;
+}
+
+.parallex_right {
+  background-image: url("media/right_parelex.jpg");
+  background-attachment: fixed;
+  background-position: right;
+
+  background-repeat: no-repeat;
+  background-size: 65%;
+  height: 25em;
+  width: 30%;
+  margin: 10em 0px;
+  position: absolute;
+  right: 0;
+  bottom: -30em;
+}
+
+.parallex_left {
+  background-image: url("media/left_parlex.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  z-index: -999;
+  background-repeat: no-repeat;
+  background-size: 18%;
+  height: 25em;
+  width: 18%;
+  margin: 10em 0px;
+  position: absolute;
+  top: 110em;
+}
+
+@media (max-width: 1700px) {
+  .parallex_right {
+    display: none;
+  }
+  .parallex_left {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .store_item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .store_item_info a {
+    font-size: 1.5em;
+  }
+  .store_item_info p {
+    font-size: 0.8em;
+  }
+
+  .store_item_info button {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 450px) {
+  .store_item_info a {
+    font-size: 1.2em;
+  }
+  .store_item_info p {
+    font-size: 0.6em;
+  }
+
+  .store_item_info button {
+    font-size: 0.6em;
+  }
+}
+
+.h_pop {
+  display: flex;
+  justify-content: center;
+}
+
+.h_pop img {
+  border-radius: 50px;
+  width: 68vw;
+  margin-bottom: 25px;
+}

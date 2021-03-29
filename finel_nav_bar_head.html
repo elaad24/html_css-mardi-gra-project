@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <!-- start botstrap links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- end botstrap links -->
+    <!-- start main page animations link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- end main page animations links -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- icon for the top  -->
+    <link rel='shortcut icon' href='icons/extara_small_logo.png'>
+    <!-- end of icon for the top  -->
+    <!-- start google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <!-- end google fonts  -->
+    <!-- latest update for main was at this spot -->
+    <!-- start link & script for store animations  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- the scroll down animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--the scroll down animation script  -->
+    <!-- start link & script for store animations  -->
+    <!-- latest update for store page  was at this spot -->
+
+    <!-- start google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <!-- end google fonts  -->
+    <link rel="stylesheet" href="sass/main.css">
+    <title> finel nav bar head</title>
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            background-image: -webkit-gradient(linear, left top, right top, from(#171717), to(#303030));
+            background-image: linear-gradient(to right, #171717, #303030);
+        }
+
+        .upper {
+            /*  border: 2px solid black; */
+            height: 125px;
+        }
+
+        #extra_Small_logo {
+            height: 4em;
+            width: 5em;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: black;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: europa, sans-serif;
+        }
+
+        ul.navbar-nav li a {
+            font-family: 'Henny Penny', cursive;
+
+        }
+
+        .tmlTopBar_icon {
+            width: 2em;
+            height: 2em;
+        }
+
+        #navbarNav>ul>li>a {
+            border-right: 2px solid rgba(167, 162, 162, 0.678);
+            padding-right: 3em;
+
+
+
+        }
+
+        .movie_container {
+            position: absolute;
+            z-index: -1;
+            margin: 0 auto;
+            top: 0px;
+            border-radius: 7%;
+            overflow: hidden;
+            width: 100em;
+            left: 0;
+            right: 0;
+            top: 5em;
+        }
+
+        .backgroundVideo {
+            width: 100em;
+        }
+
+        .fade-out {
+            animation: fadeOut ease 10s;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            65% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        .main_upper_container {
+            width: 100%;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+
+
+        }
+
+        .placeholder {
+            display: flex;
+            width: 100em;
+            height: 56.25em;
+            z-index: 0;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            box-sizing: border-box;
+
+
+        }
+
+        .first_look_txt {
+            width: fit-content;
+            align-content: center;
+            z-index: -2;
+
+        }
+
+        .scrol_down_icon img {
+            width: 4em;
+            height: 4em;
+            margin-left: 50%;
+        }
+
+        :root {
+            --whiteis: #f2f2f2;
+            --blackis: #0d0d0d;
+            --yellowis: #f2cc0f;
+            --greenis: #8cbf3f;
+            --purpleis: #9453a6;
+            --normal-font: 'Pattaya', sans-serif;
+            --ugly-font: 'Henny Penny', cursive;
+
+        }
+
+        .first_look_txt h2 {
+            color: var(--greenis);
+            font-family: 'Pattaya', sans-serif;
+            font-size: 3em;
+            letter-spacing: 400;
+            animation-delay: 7.5s;
+            display: block;
+        }
+
+        .first_look_txt p {
+            width: fit-content;
+            color: var(--purpleis);
+            margin-left: 25%;
+            font-family: 'Pattaya', sans-serif;
+            font-size: 1.8em;
+            animation-delay: 7.7s;
+
+
+        }
+
+        .fade-in_sub_title {
+            animation: fadeIn ease 10s;
+        }
+
+        @keyframes in_sub_title {
+            0% {
+                opacity: 0;
+            }
+
+            95% {
+                opacity: 0.1;
+            }
+
+            100% {
+                opacity: 1;
+                display: none;
+            }
+        }
+
+        .mardiGrasEvent_outside_container {
+            position: relative;
+            bottom: 4em;
+            height: 20px;
+            z-index: 5;
+            align-items: center;
+        }
+
+        .mardiGrasEvent_Box {
+            z-index: 6;
+            align-content: center;
+            bottom: 0%;
+        }
+
+        .mardiGrasEvent_outside_container h2 {
+            color: #fff;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .mardiGrasEvent_Box ul {
+            position: absolute;
+            left: 25%;
+
+
+        }
+
+        .mardiGrasEvent_Box ul li {
+            float: left;
+            width: 25em;
+            height: 25em;
+            border: 7px var(--blackis);
+            border-style: double;
+            margin: 20px;
+            display: block;
+            flex-direction: column;
+            display: flex;
+
+        }
+
+
+        .mardiGrasEvent_Box ul li:hover a {
+            display: block;
+        }
+
+        .mardiGrasEvent_Box ul li h3 :nth-child(1) {
+            font-size: 1em;
+            color: var(--greenis);
+        }
+
+        .mardiGrasEvent_Box ul li h3 :nth-child(2) {
+            font-size: 1.7em;
+            border-bottom: 1px solid var(--purpleis);
+        }
+
+        .mardiGrasEvent_Box ul li h3 {
+            color: var(--yellowis);
+            font-family: var(--normal-font);
+            text-align: center;
+            margin: 0;
+        }
+
+
+        .mardiGrasEvent_Box ul li p {
+            color: var(--greenis);
+            font-family: var(--normal-font);
+            text-align: center;
+
+            font-size: 1.6em;
+
+        }
+
+        .mardiGrasEvent_Box ul li p:nth-of-type(2) {
+            color: var(--yellowis);
+            font-family: var(--normal-font);
+            text-align: center;
+
+
+        }
+
+        .marg-top {
+            margin-top: 1.2em;
+            margin-bottom: -12px;
+        }
+
+        .mardiGrasEvent_Box ul li a {
+            font-size: 1.3em;
+            font-family: var(--normal-font);
+            color: var(--whiteis);
+            /*   border:white 2px solid; */
+            margin: 1em 2.5em 0em 2.5em;
+            letter-spacing: 2px;
+            display: none;
+        }
+
+        .mardiGrasEvent_Box ul li a:nth-of-type(1) {
+            border-bottom: var(--whiteis) 2px solid;
+        }
+
+
+
+        /* update for the class */
+        .mardiGrasEvent_outside_container {
+            bottom: 20em;
+            animation: fadeIn step-end 8.5s;
+
+        }
+
+        .body_section {
+            margin-top: 10em;
+            width: 100%;
+            height: auto;
+        }
+
+        .covid_warning {
+            width: 50em;
+            background-color: #fafa92;
+            border-top: 8px solid var(--greenis);
+            border-bottom: 8px solid var(--greenis);
+            border-bottom-right-radius: 1.9em;
+            border-top-left-radius: 1.9em;
+            display: block;
+            /* margin: 0 auto; */
+            left: 0;
+
+        }
+
+        .covid_warning h3 {
+            color: #d30f0f;
+            text-align: center;
+            border-bottom: 2px solid red;
+        }
+
+        .covid_warning p {
+            padding: 0px 1.1em 0px 1.1em;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: var(--blackis);
+
+        }
+
+        .covid_warning p a {
+            font-size: 1.4;
+            color: var(--purpleis);
+        }
+
+        .faq_teaser {
+            margin-top: 5em;
+            width: 50em;
+            border: white 2px solid;
+
+
+        }
+
+        .a_normal {
+            text-decoration: none;
+
+        }
+
+
+        .txt_color1 {
+            color: var(--purpleis);
+            font-size: 1.5em;
+        }
+
+        .txt_color2 {
+            color: var(--greenis);
+            font-size: 1.0em;
+        }
+
+        .txt_color3 {
+            color: var(--yellowis);
+            font-size: 1.7em;
+        }
+
+        .mayor_teaser {
+            width: 20em;
+            height: 24.5em;
+            background-color: #fff;
+            position: absolute;
+            right: 20em;
+            top: 75.6em;
+            border-top: 5px solid var(--purpleis);
+            border-right: 5px solid var(--yellowis);
+            border-left: 5px solid var(--purpleis);
+
+
+        }
+
+        .flag {
+            clear: both;
+            position: relative;
+            display: block;
+            height: .2em;
+            margin: .3em auto 0 auto;
+            background: #e5c431
+        }
+
+        .flag:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 33%;
+            height: 100%;
+            background: #7033ac
+        }
+
+        .flag:after {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            width: 33%;
+            height: 100%;
+            background: #239e33
+        }
+
+        .mayor_teaser img {
+            margin-top: 1em;
+            margin-left: 25%;
+            margin-bottom: 1em;
+            box-shadow: 4px 0px 10px #000;
+
+        }
+
+        .mayor_teaser p {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .parallex {
+            background-image: url('media/parlex_background.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 25em;
+            margin: 10em 0px;
+
+        }
+
+        .sponsers_section {
+            margin-top: 5em;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+
+        }
+
+
+        .grid_headline_hotls {
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+
+        .grid_headline_attractions {
+            grid-row: 1/2;
+            grid-column: 7/8;
+        }
+
+        .grid_headline_hotls span {
+            color: var(--whiteis);
+            font-size: 2em;
+        }
+
+        .grid_headline_attractions span {
+            color: var(--whiteis);
+            font-size: 2em;
+        }
+
+
+
+        .small_hotles__pics {
+            grid-row: 2/5;
+            grid-column: 1/5;
+            display: flex;
+            justify-content: center;
+        }
+
+        .small_attractions_pics {
+            grid-row: 2/5;
+            grid-column: 5/9;
+            display: flex;
+            left: 900px;
+            bottom: 30px;
+            justify-content: center;
+        }
+
+
+        .pics_types_of_groups {
+            display: flex;
+            margin: 0;
+
+        }
+
+        .pics_types_of_groups h2 {
+            color: var(--whiteis);
+        }
+
+        .small_pic {
+            margin-left: 0.7em;
+        }
+
+        .small_pic img {
+            width: 200px;
+            border-radius: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .small_pic img:hover {
+            transition: all 0.23s ease-in-out;
+            border-radius: 10px;
+
+        }
+
+        .small_pic img {
+            width: 11em;
+            height: 13em;
+        }
+
+        .small_pic h5 {
+            color: var(--whiteis);
+            text-align: center;
+        }
+
+
+
+
+        .reverse_flag {
+            clear: both;
+            position: relative;
+            display: block;
+            height: .2em;
+            margin: .3em auto 0 auto;
+            background: #e5c431
+        }
+
+        .reverse_flag:before {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 0;
+            width: 33%;
+            height: 100%;
+            background: #7033ac
+        }
+
+        .reverse_flag:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 33%;
+            height: 100%;
+            background: #239e33
+        }
+
+
+        .txt_color1:hover {
+            color: var(--purpleis);
+            border-width: 2px;
+            border-style: dashed;
+            border-top-color: var(--yellowis);
+            border-right-color: var(--purpleis);
+            border-bottom-color: var(--greenis);
+            border-left-color: var(--blackis);
+
+        }
+
+        .txt_color2:hover {
+            color: var(--greenis);
+            border-width: 2px;
+            border-style: dashed;
+            border-top-color: var(--purpleis);
+            border-right-color: var(--greenis);
+            border-bottom-color: var(--blackis);
+            border-left-color: var(--yellowis);
+
+        }
+
+        .txt_color3:hover {
+            color: var(--yellowis);
+            border-width: 2px;
+            border-style: dashed;
+            border-top-color: var(--greenis);
+            border-right-color: var(--blackis);
+            border-bottom-color: var(--yellowis);
+            border-left-color: var(--purpleis);
+
+        }
+
+        /* update for the class */
+        .faq_teaser {
+            margin-top: 5em;
+            width: 50em;
+            border: none;
+
+
+        }
+
+        /* update for the class  small_pic h4 */
+        .small_pic h5 {
+            color: var(--whiteis);
+            text-align: center;
+        }
+
+        /* update for the class */
+        .small_pic img {
+            width: 11em;
+            height: 13em;
+        }
+
+        /* update for the class */
+        .grid_headline_attractions {
+            grid-row: 1/2;
+            grid-column: 6/7;
+        }
+
+        /* update for the class */
+        .small_hotles__pics {
+            grid-row: 2/5;
+            grid-column: 1/4;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* update for the class */
+        .small_attractions_pics {
+            grid-row: 2/5;
+            grid-column: 4/9;
+            display: flex;
+            left: 900px;
+            bottom: 30px;
+            justify-content: center;
+        }
+
+        .poscard_popup {
+            position: fixed;
+            top: 4em;
+            display: none;
+            z-index: 5;
+
+        }
+
+
+
+        .poscard_popup img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .popup_sponser {
+            height: 300px;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 8em;
+        }
+
+        .popup_location img {
+            width: 100%;
+        }
+
+        .popup_location {
+            height: 37em;
+            margin-bottom: 2em;
+        }
+
+        .popup_location p {
+
+            width: 25em;
+            color: white;
+            font-size: 3em;
+            margin: 0.5em 30%;
+            font-family: var(--normal-font);
+        }
+
+        .ritz_popup {
+            display: none;
+        }
+
+        .sheraton_popup {
+            display: none;
+        }
+
+        .walk_on_popup {
+            display: none;
+        }
+
+        .aca_popup {
+            display: none;
+        }
+
+        .kids_popup {
+            display: none;
+        }
+
+        .death_popup {
+            display: none;
+        }
+
+        .haunted_popup {
+            display: none;
+        }
+
+        .premium_parking_popup {
+            display: none;
+        }
+
+
+        .ritz_popup img {
+            border-radius: 50px;
+        }
+
+        .sheraton_popup img {
+            border-radius: 50px;
+        }
+
+        .walk_on_popup img {
+            border-radius: 50px;
+        }
+
+        .aca_popup img {
+            border-radius: 50px;
+        }
+
+        .kids_popup img {
+            border-radius: 50px;
+        }
+
+        .death_popup img {
+            border-radius: 50px;
+        }
+
+        .haunted_popup img {
+            border-radius: 50px;
+        }
+
+        .premium_parking_popup img {
+            border-radius: 50px;
+        }
+
+        .footer {
+
+            background-image: url("media/middle_breake.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            margin-bottom: 0.3em;
+            text-align: center;
+
+
+        }
+
+        .copyright {}
+
+        .copyright p {
+            font-size: 1.6em;
+
+
+        }
+
+        .logo2021 {}
+
+        .logo2021 img {
+            height: 17em;
+            position: relative;
+
+        }
+
+        /*      need to replace theese class is main  */
+
+        .poscard_popup {
+            left: 30%;
+            position: fixed;
+            top: 4em;
+            z-index: 995;
+
+        }
+
+
+
+        .poscard_popup img {
+            width: 35vw;
+            z-index: 998;
+
+        }
+
+        /*      for all css  */
+        .dark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.705);
+            z-index: 995;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /*  <!-- latest update for main was at this spot -->*/
+    </style>
+</head>
+
+<body>
+    <!-- nav bar start  -->
+    <header>
+
+        <nav class="navbar navbar-expand-xl  navbar-dark bg-dark ">
+            <a class="navbar-brand" href="./index.html" style="margin-left:1em ;">
+                <img class="animate__animated animate__bounceInLeft" id="extra_Small_logo"
+                    src="icons/extara_small_logo.png" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-lg-around   " style="width:100%">
+
+                    <li class="nav-item   ">
+                        <a class="nav-link " href="./index.html" style="letter-spacing: 1.5px;"> MAIN EVENTS </a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" style="letter-spacing: 1.5px;">HISTORY & TRADITION
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./media.html" style="letter-spacing: 1.5px;">MEDIA
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./store.html" style="letter-spacing: 1.5px;">STORE
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./faq.html" style="letter-spacing: 2px;">FAQ</a>
+                    </li>
+
+                    <li class="nav-item justify-content-center">
+                        <a class="nav-link " href="./contect.html" style="letter-spacing: 1.5px;">CONTACT US
+                        </a>
+                    </li>
+
+
+
+                    <div class="nav-item  justify-content-center mt-auto animate__animated  animate__fadeInRight row"
+                        id="media_links">
+                        <div class="div_icon_min">
+                            <a href="https://www.facebook.com/MardiGrasNewOrleans"
+                                class="tmlTopBar_dropdownToggle preventintercept btn  btn-outline-primary"
+                                role="button">
+                                <img class='tmlTopBar_icon' src="icons/facebook_icon.png" alt="">
+                            </a>
+
+
+                            <a href="https://twitter.com/mardigrasnola"
+                                class="tmlTopBar_dropdownToggle preventintercept btn btn-outline-info " role="button">
+                                <img class='tmlTopBar_icon' src="icons/twiter_icon.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="div_icon_min">
+                            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q"
+                                class="tmlTopBar_dropdownToggle preventintercept btn btn-outline-danger" role="button">
+                                <img class='tmlTopBar_icon' src="icons/youtubeIcons.png" alt="">
+                            </a>
+
+                            <a href="https://www.instagram.com/mardigrasneworleans/"
+                                class="tmlTopBar_dropdownToggle preventintercept btn btn-outline-warning" role="button">
+                                <img class='tmlTopBar_icon' src="icons/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- nav bar end -->
+
+    <div style="color: cyan; z-index: 20;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo
+        earum accusamus non, aliquam beatae ab, tempore ratione dolor architecto ducimus asperiores voluptatum
+        praesentium alias laudantium nesciunt ipsa nisi sed. Et voluptate aut velit. Voluptates porro ea enim? Beatae
+        quisquam quaerat laborum qui quo veniam nostrum, nemo impedit voluptatum fuga perferendis quibusdam aperiam
+        saepe dignissimos debitis aspernatur dolor. Distinctio a magnam omnis perspiciatis quam ipsum deserunt
+        excepturi. Illo impedit expedita beatae nisi doloribus rerum, fuga odio dolore quasi nobis libero. Maxime,
+        nostrum deserunt. Qui doloribus consequuntur sint ea asperiores odit assumenda beatae iusto perspiciatis
+        tempora! Tempora consequuntur ad exercitationem porro nam enim minima, non blanditiis facilis, totam ea, odit
+        necessitatibus ex odio cumque! Error dolor aspernatur doloremque quidem, unde, mollitia vitae sapiente, quos
+        officia sint ipsa nesciunt temporibus dolores reprehenderit rem at ipsam quam debitis deleniti voluptatem
+        deserunt dolorum! Eaque aspernatur consequatur a sunt sequi perferendis et error neque maxime quaerat dolore
+        consectetur totam, quasi doloremque illo cumque accusantium? Fugiat sit possimus repudiandae aut deleniti velit
+        culpa non atque, optio et soluta quisquam vel id cum ullam doloremque perferendis doloribus reprehenderit
+        voluptatum ducimus harum rerum a? Excepturi dolore aliquam corrupti earum alias dolorum tenetur voluptatem,
+        necessitatibus sequi accusantium expedita aperiam eaque fuga et numquam totam consequuntur deserunt suscipit
+        impedit voluptatum quo, facere labore. Deleniti voluptatum harum eos, necessitatibus voluptatibus vel eius
+        quaerat minus. Sint porro dignissimos incidunt quibusdam, fuga a rerum ea nostrum dicta neque iusto maiores
+        perspiciatis ab et minima magnam quisquam debitis magni amet expedita. Asperiores accusantium expedita eum sed
+        voluptatum cupiditate id tempore autem aut magnam vero officiis sequi eveniet veniam pariatur veritatis omnis
+        error ratione, recusandae dolores doloremque molestias voluptate eos quos! Eaque esse illo mollitia natus
+        nesciunt? Illo consequuntur obcaecati molestiae dolorum praesentium, maiores recusandae enim porro, repellendus
+        earum quidem nostrum totam error provident aspernatur ex possimus velit sapiente, eos commodi harum iusto
+        aliquid! Incidunt porro eaque, modi quos magnam itaque voluptates fugiat dolore consectetur similique nostrum,
+        quis exercitationem quia distinctio eius dolor illo possimus eveniet ex sunt suscipit at eligendi ipsa. Minus
+        odit vero earum consectetur nulla in maxime? Animi atque maxime ut eius, sed modi similique earum? Non harum
+        quibusdam impedit minus voluptatem quos dolor officia sunt atque ad cum dignissimos necessitatibus ut expedita,
+        odio quaerat perspiciatis veritatis sed nihil, pariatur asperiores assumenda. Porro consequuntur repellendus
+        quasi, atque optio quidem totam dolor minima pariatur esse placeat cumque laudantium debitis ea assumenda
+        dolorem. Soluta doloribus error vitae ipsam fuga molestiae veniam accusamus optio officiis quod sunt amet
+        debitis, nulla unde vero. Ullam accusantium placeat dolor autem adipisci excepturi. Ducimus cupiditate aliquam
+        minus beatae. Aperiam saepe velit, necessitatibus nam laudantium illo, deserunt ea labore officiis quia eum
+        provident impedit eligendi consectetur similique perspiciatis natus suscipit aspernatur earum deleniti aliquam
+        facere, recusandae ullam ipsam. Commodi provident nihil atque optio quia qui fugiat sunt aperiam? Porro
+        reiciendis exercitationem accusamus rem ut perferendis alias, dolore accusantium modi vel? Vero nam praesentium
+        tempore. Error quis delectus voluptatum quae magni esse voluptatem? Quae, quia, dicta illum architecto, totam
+        fugit reprehenderit molestias veritatis repellat a deleniti dolores vel! In maiores nemo accusamus? Quis
+        temporibus blanditiis ipsum ab maxime repudiandae officiis eum sequi pariatur, ratione quia sint molestias
+        distinctio tenetur porro magnam exercitationem laudantium perspiciatis dolor. Sit ipsa sunt consequatur rerum
+        qui maiores accusantium molestias architecto aperiam adipisci repudiandae veniam inventore quos itaque omnis
+        culpa, hic quibusdam eos explicabo. Numquam repudiandae temporibus iusto nostrum officia aliquid omnis incidunt,
+        culpa asperiores officiis dolore commodi itaque mollitia quisquam debitis? Et laudantium autem quidem voluptate
+        aliquid. Laudantium culpa rem ipsam quibusdam illo tenetur magnam molestias reiciendis consequatur nisi
+        dignissimos, placeat tempore. Repudiandae, cupiditate excepturi error pariatur a incidunt consectetur illo quam
+        deserunt? Impedit dolores ea aspernatur magni, similique cumque quisquam vel. Dolores facilis aliquid eligendi
+        porro libero dolorem voluptas accusamus dolore, quia neque nulla assumenda accusantium voluptates repellat saepe
+        iste fugiat voluptatum ducimus commodi exercitationem? Perferendis delectus atque quod nesciunt nostrum dicta,
+        ea nobis rerum optio unde pariatur vel voluptatum maiores totam explicabo. Distinctio officia blanditiis
+        doloribus saepe ut enim voluptate deleniti qui corporis. Minus rerum quam accusantium veritatis quibusdam illum
+        consectetur facilis, eaque reprehenderit obcaecati, mollitia sint. Porro hic voluptatem rem, corrupti fuga atque
+        quas, nam delectus officia commodi quaerat sequi quia fugit sint tempora vel soluta debitis eum distinctio
+        obcaecati minima iusto sapiente magnam. Alias, sed. Ea quisquam doloremque, minus voluptatem in quo sunt sit
+        obcaecati officiis consectetur laudantium consequuntur impedit explicabo qui molestias nisi? Repellat voluptates
+        perspiciatis dicta mollitia ad, voluptatibus, quidem cumque animi debitis incidunt obcaecati id, eum blanditiis!
+        Provident, velit ipsa perspiciatis sint nostrum, excepturi alias iure veniam maxime dignissimos, beatae
+        assumenda molestiae suscipit atque veritatis harum eius! Iure suscipit iste enim explicabo error libero aliquam
+        voluptate animi, minima nulla dolore placeat distinctio quisquam praesentium sint assumenda adipisci quas
+        molestiae repellat eius incidunt laborum architecto modi atque! Necessitatibus deserunt commodi praesentium
+        eligendi rerum labore, cum exercitationem dignissimos corrupti modi dolore ratione, et perspiciatis accusantium
+        quos explicabo ex rem placeat! Culpa illum iste dolorum sequi? Ullam expedita inventore at ipsa modi asperiores,
+        pariatur voluptas totam doloribus culpa, sint ut quia a quisquam laborum consectetur exercitationem. Corrupti
+        velit magnam atque optio numquam hic sequi? At ipsam reiciendis harum amet! Odit incidunt eveniet, odio
+        repellendus nihil qui ab cumque, cum, ipsam nisi commodi quo magnam fugiat natus quidem atque esse? Iste
+        architecto doloremque maxime deleniti expedita et, assumenda voluptates ut ipsam explicabo odit, voluptate
+        vitae. Voluptates accusantium qui quas accusamus saepe odit quae magnam, voluptas beatae architecto cupiditate!
+        Odio ea, officiis aperiam cupiditate tempora amet porro nihil pariatur ullam! At consectetur ea commodi, quidem
+        dignissimos quo incidunt suscipit aliquid praesentium deleniti veritatis delectus nobis dolorum eos fuga sit
+        ipsum voluptate soluta dolor omnis. Aliquam error officia nemo vitae fugit, sunt aspernatur sed autem quam
+        nulla? Ducimus tempore magni fugit blanditiis recusandae voluptatum et, beatae voluptatibus, deserunt quis sunt
+        iste ratione qui quos sit? Tenetur sed hic eligendi pariatur cupiditate, perferendis corrupti dolorem odit!
+        Minima blanditiis ipsa debitis, dolorum laudantium consequuntur! Libero assumenda voluptatem iste? Aliquid
+        corrupti, nulla aperiam eaque error similique accusantium esse?</div>
+    <!-- end nav bar  -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

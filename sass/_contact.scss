@@ -1,0 +1,58 @@
+.form-group > input:focus {
+  outline: 0;
+  border-color: rgb(167, 29, 29);
+  border-width: 2px;
+}
+
+.txt {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--whiteis);
+  font-family: var(--txt-font);
+  font-size: 1em;
+}
+
+.small_txt {
+  color: var(--whiteis);
+  font-family: var(--txt-font);
+  text-decoration: underline;
+}
+
+.submit_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.submit_btn_inner {
+  width: 12em;
+  height: 3em;
+  border-radius: 25px;
+  background-color: var(--purpleis);
+  border-color: var(--purpleis);
+}
+
+.submit_btn_inner:hover {
+  background-color: #c41a5b;
+  transition: 0.29s ease-in-out;
+  border-color: #c41a5b;
+}
+
+.custom-control-label {
+  font-size: 1.02em;
+  color: var(--whiteis);
+  font-family: var(--txt-font);
+}
+
+.cursors {
+  cursor: pointer;
+}
+
+#subject_contact {
+  font-size: 1em;
+  font-family: var(--txt-font);
+  color: var(--whiteis);
+  /* border: white 2px solid; */
+  margin: 0.5em 1em 1em 0em;
+  letter-spacing: 2px;
+  min-width: 100px;
+}

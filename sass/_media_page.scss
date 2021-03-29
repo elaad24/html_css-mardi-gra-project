@@ -1,0 +1,79 @@
+.header_h2 h2 {
+  font-family: var(--normal-font);
+  font-size: 2.5em;
+  color: var(--purpleis);
+}
+
+.media_categories {
+  width: 25%;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.media_categories span {
+  font-family: var(--normal-font);
+  font-size: 1.4em;
+  text-align: center;
+  color: var(--whiteis);
+}
+
+.media_categories a img {
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: all 0.37s ease-in-out;
+}
+
+.media_categories a img:hover {
+  filter: grayscale(0%);
+  transition: all 0.37s ease-in-out;
+}
+
+.bottom_left_infoTag {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: purple;
+  width: 50%;
+}
+
+.media_videos_orginizer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+
+.vid {
+  width: 350px;
+  height: 270px;
+  margin: 5px;
+}
+
+.parallex_seraton {
+  background-image: url("media/sharton_Add.jpg");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 22%;
+  height: 30em;
+  width: 30%;
+  margin: 10em 0px;
+  position: absolute;
+  right: 0;
+  bottom: -42em;
+  z-index: -1;
+}
+
+.media_categories {
+  min-width: 120px;
+  min-height: 142px;
+}
+
+@media (max-width: 1000px) {
+  .parallex_seraton {
+    display: none;
+  }
+}

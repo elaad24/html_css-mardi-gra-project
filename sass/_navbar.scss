@@ -1,0 +1,52 @@
+/* edit for the nav bar */
+.upper {
+  /*  border: 2px solid black; */
+  height: 125px;
+}
+
+#extra_Small_logo {
+  height: 4em;
+  width: 5em;
+}
+
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: europa, sans-serif;
+}
+ul.navbar-nav li a {
+  font-family: "Henny Penny", cursive;
+}
+
+.tmlTopBar_icon {
+  width: 2em;
+  height: 2em;
+}
+
+#navbarNav > ul > li > a {
+  border-right: 2px solid rgba(167, 162, 162, 0.678);
+}
+
+.div_icon_min {
+  min-width: 130px;
+}
+
+.nav-item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

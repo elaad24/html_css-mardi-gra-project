@@ -1,0 +1,1174 @@
+.movie_container {
+  position: absolute;
+  z-index: -1;
+  margin: 0 auto;
+  top: 0px;
+  border-radius: 7%;
+  overflow: hidden;
+  width: 100em;
+  left: 0;
+  right: 0;
+  top: 5em;
+}
+.backgroundVideo {
+  width: 100em;
+}
+.fade-out {
+  animation: fadeOut ease 10s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.main_upper_container {
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.placeholder {
+  display: flex;
+  width: 100em;
+  height: 56.25em;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-sizing: border-box;
+}
+
+.first_look_txt {
+  width: fit-content;
+  align-content: center;
+  z-index: -2;
+}
+
+.first_look_txt h2 {
+  color: var(--greenis);
+  font-family: "Pattaya", sans-serif;
+  font-size: 3em;
+  letter-spacing: 400;
+  animation-delay: 7.5s;
+  display: block;
+}
+
+.first_look_txt p {
+  width: fit-content;
+  color: var(--purpleis);
+  margin-left: 25%;
+  font-family: "Pattaya", sans-serif;
+  font-size: 1.8em;
+  animation-delay: 7.7s;
+}
+
+.scrol_down_icon {
+  display: none;
+}
+
+.scrol_down_icon img {
+  width: 4em;
+  height: 4em;
+  margin-left: 50%;
+}
+
+.fade-in_sub_title {
+  animation: fadeIn ease 10s;
+}
+
+@keyframes in_sub_title {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    display: none;
+  }
+}
+
+.mardiGrasEvent_outside_container {
+  position: relative;
+  bottom: 4em;
+  height: 20px;
+  z-index: 5;
+  align-items: center;
+  bottom: 20em;
+  animation: fadeIn step-end 8.5s;
+}
+
+.mardiGrasEvent_Box {
+  z-index: 6;
+  align-content: center;
+  position: relative;
+  bottom: 0%;
+}
+.mardiGrasEvent_outside_container h2 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.mardiGrasEvent_Box ul {
+  position: absolute;
+  left: 25%;
+}
+
+.mardiGrasEvent_Box ul li {
+  float: left;
+  width: 25em;
+  height: 25em;
+  border: 7px var(--blackis);
+  border-style: double;
+  margin: 20px;
+  display: block;
+  flex-direction: column;
+  display: flex;
+}
+
+.mardiGrasEvent_Box ul li:hover a {
+  display: block;
+}
+.mardiGrasEvent_Box ul li h3 :nth-child(1) {
+  font-size: 1em;
+  color: var(--greenis);
+}
+
+.mardiGrasEvent_Box ul li h3 :nth-child(2) {
+  font-size: 1.7em;
+  border-bottom: 1px solid var(--purpleis);
+}
+
+.mardiGrasEvent_Box ul li h3 {
+  color: var(--yellowis);
+  font-family: var(--normal-font);
+  text-align: center;
+  margin: 0;
+}
+
+.mardiGrasEvent_Box ul li p {
+  color: var(--greenis);
+  font-family: var(--normal-font);
+  text-align: center;
+
+  font-size: 1.6em;
+}
+
+.mardiGrasEvent_Box ul li p:nth-of-type(2) {
+  color: var(--yellowis);
+  font-family: var(--normal-font);
+  text-align: center;
+}
+
+.mardiGrasEvent_Box ul li a {
+  font-size: 1.3em;
+  font-family: var(--normal-font);
+  color: var(--whiteis);
+  /*   border:white 2px solid; */
+  margin: 1em 2.5em 0em 2.5em;
+  letter-spacing: 2px;
+  display: none;
+}
+
+.mardiGrasEvent_Box ul li a:nth-of-type(1) {
+  border-bottom: var(--whiteis) 2px solid;
+}
+
+.body_section {
+  margin-top: 10em;
+  width: 100%;
+  height: auto;
+}
+.covid_warning {
+  width: 50em;
+  background-color: #fafa92;
+  border-top: 8px solid var(--greenis);
+  border-bottom: 8px solid var(--greenis);
+  border-bottom-right-radius: 1.9em;
+  border-top-left-radius: 1.9em;
+  display: block;
+  left: 0;
+}
+
+.covid_warning h3 {
+  color: #d30f0f;
+  text-align: center;
+  border-bottom: 2px solid red;
+}
+
+.covid_warning p {
+  padding: 0px 1.1em 0px 1.1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--blackis);
+}
+.covid_warning p a {
+  font-size: 1.4;
+  color: var(--purpleis);
+}
+.faq_teaser {
+  margin-top: 5em;
+  width: 50em;
+  border: none;
+}
+
+.a_normal {
+  text-decoration: none;
+}
+
+.txt_color1 {
+  color: var(--purpleis);
+  font-size: 1.5em;
+}
+
+.txt_color2 {
+  color: var(--greenis);
+  font-size: 1em;
+}
+
+.txt_color3 {
+  color: var(--yellowis);
+  font-size: 1.7em;
+}
+
+.txt_color1:hover {
+  color: var(--purpleis);
+  border-width: 2px;
+  border-style: dashed;
+  border-top-color: var(--yellowis);
+  border-right-color: var(--purpleis);
+  border-bottom-color: var(--greenis);
+  border-left-color: var(--blackis);
+}
+
+.txt_color2:hover {
+  color: var(--greenis);
+  border-width: 2px;
+  border-style: dashed;
+  border-top-color: var(--purpleis);
+  border-right-color: var(--greenis);
+  border-bottom-color: var(--blackis);
+  border-left-color: var(--yellowis);
+}
+
+.txt_color3:hover {
+  color: var(--yellowis);
+  border-width: 2px;
+  border-style: dashed;
+  border-top-color: var(--greenis);
+  border-right-color: var(--blackis);
+  border-bottom-color: var(--yellowis);
+  border-left-color: var(--purpleis);
+}
+.mayor_teaser {
+  width: 20em;
+  height: 24.5em;
+  background-color: #fff;
+  position: absolute;
+  right: 20em;
+  top: 75.6em;
+  border-top: 5px solid var(--purpleis);
+  border-right: 5px solid var(--yellowis);
+
+  border-left: 5px solid var(--purpleis);
+}
+
+.mayor_teaser img {
+  margin-top: 1em;
+  margin-left: 25%;
+  margin-bottom: 1em;
+  box-shadow: 4px 0px 10px #000;
+}
+.mayor_teaser p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.parallex {
+  background-image: url("media/parlex_background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 25em;
+  margin: 10em 0px;
+}
+
+.sponsers_section {
+  margin-top: 5em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.grid_headline_hotls {
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
+
+.grid_headline_attractions {
+  grid-row: 1/2;
+  grid-column: 5/7;
+}
+
+.grid_headline_hotls span {
+  color: var(--whiteis);
+  font-size: 2em;
+}
+
+.grid_headline_attractions span {
+  color: var(--whiteis);
+  font-size: 2em;
+}
+
+.small_hotles__pics {
+  grid-row: 2/5;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+}
+
+.small_attractions_pics {
+  grid-row: 2/5;
+  grid-column: 4/9;
+  display: flex;
+  left: 900px;
+  bottom: 30px;
+  justify-content: center;
+}
+
+.pics_types_of_groups {
+  display: flex;
+  margin: 0;
+}
+
+.pics_types_of_groups h2 {
+  color: var(--whiteis);
+}
+
+.small_pic {
+  margin-left: 0.7em;
+}
+
+.small_pic img {
+  width: 200px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.small_pic img:hover {
+  transition: all 0.23s ease-in-out;
+  border-radius: 10px;
+}
+
+.small_pic img {
+  width: 11em;
+  height: 13em;
+}
+
+.small_pic h5 {
+  color: var(--whiteis);
+  text-align: center;
+}
+
+.poscard_popup {
+  display: none;
+  left: 30%;
+  position: fixed;
+  top: 4em;
+  z-index: 995;
+}
+
+.poscard_popup img {
+  width: 35vw;
+  height: 80vh;
+  z-index: 998;
+}
+
+.popup_sponser {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15em;
+}
+
+.popup_location img {
+  width: 100%;
+}
+
+.popup_location {
+  height: 37em;
+  margin-bottom: 2em;
+}
+
+.popup_location p {
+  width: 25em;
+  color: white;
+  font-size: 3em;
+  margin: 0.5em 30%;
+  font-family: var(--normal-font);
+}
+
+.ritz_popup {
+  display: none;
+}
+.sheraton_popup {
+  display: none;
+}
+.walk_on_popup {
+  display: none;
+}
+.aca_popup {
+  display: none;
+}
+.kids_popup {
+  display: none;
+}
+.death_popup {
+  display: none;
+}
+.haunted_popup {
+  display: none;
+}
+.premium_parking_popup {
+  display: none;
+}
+
+.ritz_popup img {
+  border-radius: 50px;
+}
+.sheraton_popup img {
+  border-radius: 50px;
+}
+.walk_on_popup img {
+  border-radius: 50px;
+}
+.aca_popup img {
+  border-radius: 50px;
+}
+.kids_popup img {
+  border-radius: 50px;
+}
+.death_popup img {
+  border-radius: 50px;
+}
+.haunted_popup img {
+  border-radius: 50px;
+}
+.premium_parking_popup img {
+  border-radius: 50px;
+}
+
+.footer {
+  background-image: url("media/middle_breake.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+.copyright {
+}
+
+.copyright p {
+  font-size: 1.6em;
+}
+
+@media (max-width: 1800px) {
+  .mayor_teaser {
+    right: 100px;
+  }
+  .parallex {
+    height: 22vh;
+    background-size: contain;
+  }
+  .popup_sponser {
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-width: 1700px) {
+  .movie_container {
+    margin-top: 55px;
+    width: 80vw;
+  }
+  .backgroundVideo {
+    width: 80vw;
+  }
+  .placeholder {
+    width: 80vw;
+  }
+
+  .mardiGrasEvent_Box ul li {
+    width: 25vw;
+    height: fit-content;
+    margin: 20px 5px;
+  }
+
+  .poscard_popup img {
+    height: auto;
+    width: 80vh;
+  }
+}
+
+@media (max-width: 1500px) {
+  .small_pic img {
+    width: 9.5em;
+    height: 9.5em;
+  }
+}
+
+@media (max-width: 1350px) {
+  .mayor_teaser {
+    right: 40px;
+  }
+  .parallex {
+    height: 20vh;
+  }
+
+  .small_pic img {
+    width: 8.5em;
+    height: 8.5em;
+  }
+
+  .pics_types_of_groups h5 {
+    font-size: 1.1em;
+  }
+  .popup_sponser {
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 6em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .movie_container {
+    width: 80vw;
+  }
+  .backgroundVideo {
+    width: 80vw;
+  }
+  .placeholder {
+    width: 80vw;
+  }
+  .mardiGrasEvent_Box ul {
+    margin-bottom: 7em;
+  }
+
+  .mardiGrasEvent_Box ul li {
+    width: 25vw;
+    height: fit-content;
+    margin: 20px 5px;
+  }
+  .covid_warning {
+    width: 40em;
+  }
+
+  .covid_warning h3 {
+    font-size: 1.5em;
+  }
+
+  .covid_warning p {
+    font-size: 1.1em;
+  }
+
+  .faq_teaser {
+    width: 40em;
+  }
+  .txt_color1 {
+    font-size: 1.2em;
+  }
+
+  .txt_color2 {
+    font-size: 0.87em;
+  }
+
+  .txt_color3 {
+    font-size: 1.5em;
+  }
+  .mayor_teaser {
+    right: 15px;
+    width: 13em;
+  }
+
+  .mayor_teaser img {
+    margin-left: 10%;
+  }
+
+  .mayor_teaser p {
+    font-size: 0.8em;
+  }
+
+  .small_pic img {
+    width: 6.5em;
+    height: 6.5em;
+  }
+
+  .pics_types_of_groups h5 {
+    font-size: 0.9em;
+  }
+
+  .poscard_popup {
+    left: 19%;
+  }
+
+  .poscard_popup img {
+    width: 65vh;
+  }
+
+  .popup_sponser {
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-width: 990px) {
+  .movie_container {
+    width: 80vw;
+  }
+  .backgroundVideo {
+    width: 80vw;
+  }
+  .placeholder {
+    width: 80vw;
+  }
+
+  .covid_warning {
+    width: 28em;
+    margin-left: 20%;
+  }
+
+  .covid_warning h3 {
+    font-size: 1.1em;
+  }
+
+  .covid_warning p {
+    font-size: 0.8em;
+  }
+
+  .covid_warning a {
+    font-size: 1.2em;
+  }
+
+  .faq_teaser {
+    width: 28em;
+    margin-left: 20%;
+    margin-top: 3em;
+  }
+  .txt_color1 {
+    font-size: 0.8em;
+  }
+
+  .txt_color2 {
+    font-size: 0.7em;
+  }
+
+  .txt_color3 {
+    font-size: 1em;
+  }
+
+  .mayor_teaser {
+    margin-top: 2em;
+    position: static;
+    width: 25em;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+  }
+
+  .mayor_teaser img {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .parallex {
+    height: 18vh;
+  }
+
+  .small_pic img {
+    width: 5.5em;
+    height: 5.5em;
+  }
+
+  .pics_types_of_groups h5 {
+    font-size: 0.78em;
+  }
+
+  .poscard_popup {
+    left: 10%;
+  }
+}
+
+@media (max-width: 850px) {
+  .pics_types_of_groups {
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+
+  .popup_location p {
+    font-size: 2em;
+  }
+
+  .sponsers_section {
+    height: 600px;
+  }
+}
+
+@media (max-width: 770px) {
+  .mardiGrasEvent_outside_container h2 {
+    /* white festivals header  */
+    font-size: 1.5em;
+  }
+  .mardiGrasEvent_Box ul li {
+    width: 22vw;
+    height: fit-content;
+    margin: 20px 5px;
+  }
+  .mardiGrasEvent_Box ul li h3 :nth-child(1) {
+    /* green small */
+    font-size: 0.9em;
+  }
+  .mardiGrasEvent_Box ul li h3 :nth-child(2) {
+    /* yellow big */
+    font-size: 1.5em;
+  }
+  .mardiGrasEvent_Box ul li p {
+    /* data small green  */
+    font-size: 1.5em;
+  }
+  .mardiGrasEvent_Box ul li p:nth-of-type(2) {
+    /* time small yellow  */
+    font-size: 1.5em;
+  }
+  .mardiGrasEvent_Box ul li a {
+    /* hottles wieth */
+    font-size: 1.2em;
+    margin: 15px 2px;
+  }
+
+  .body_section {
+    margin-top: 15em;
+  }
+
+  .covid_warning {
+    margin-left: 10%;
+  }
+  .faq_teaser {
+    margin-left: 10%;
+  }
+
+  .mayor_teaser {
+    margin-top: 2em;
+    position: static;
+    width: 28em;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .mayor_teaser img {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .poscard_popup {
+    left: 2%;
+  }
+
+  .poscard_popup img {
+    width: 50vh;
+  }
+  .small_hotles__pics {
+    margin-left: 10em;
+  }
+  .small_attractions_pics {
+    width: 360px;
+  }
+}
+
+@media (max-width: 700px) {
+  .movie_container {
+    width: 80vw;
+  }
+  .backgroundVideo {
+    width: 80vw;
+  }
+  .placeholder {
+    width: 80vw;
+  }
+
+  .first_look_txt h2 {
+    /* green big first header */
+    font-size: 2em;
+  }
+  .first_look_txt p {
+    /* purpel big header */
+    font-size: 1.2em;
+  }
+
+  .mardiGrasEvent_Box ul {
+    left: 15%;
+  }
+
+  .mardiGrasEvent_Box ul li {
+    width: 26vw;
+    height: fit-content;
+    margin: 20px 5px;
+  }
+  .mardiGrasEvent_outside_container h2 {
+    /* white festivals header  */
+    font-size: 1.5em;
+  }
+  .mardiGrasEvent_Box ul li h3 :nth-child(1) {
+    /* green small */
+    font-size: 0.8em;
+  }
+  .mardiGrasEvent_Box ul li h3 :nth-child(2) {
+    /* yellow big */
+    font-size: 1.1em;
+  }
+  .mardiGrasEvent_Box ul li p {
+    /* data small green  */
+    font-size: 1em;
+  }
+  .mardiGrasEvent_Box ul li p:nth-of-type(2) {
+    /* time small yellow  */
+    font-size: 1em;
+  }
+  .mardiGrasEvent_Box ul li a {
+    /* hottles wieth */
+    font-size: 1em;
+    margin: 15px 2px;
+  }
+
+  .parallex {
+    height: 15vh;
+  }
+
+  .small_hotles__pics {
+    margin-left: 7em;
+  }
+
+  .small_attractions_pics {
+    width: 220px;
+  }
+}
+
+@media (max-width: 550px) {
+  .movie_container {
+    width: 80vw;
+  }
+  .backgroundVideo {
+    width: 80vw;
+  }
+  .placeholder {
+    width: 80vw;
+  }
+
+  .mardiGrasEvent_Box ul {
+    left: 10%;
+  }
+
+  .mardiGrasEvent_Box ul li {
+    width: 23vw;
+    height: fit-content;
+    margin: 20px 5px;
+  }
+  .mardiGrasEvent_outside_container h2 {
+    /* white festivals header  */
+    font-size: 0.8em;
+  }
+  .mardiGrasEvent_Box ul li h3 :nth-child(1) {
+    /* green small */
+    font-size: 0.4em;
+  }
+  .mardiGrasEvent_Box ul li h3 :nth-child(2) {
+    /* yellow big */
+    font-size: 0.6em;
+  }
+  .mardiGrasEvent_Box ul li p {
+    /* data small green  */
+    font-size: 0.8em;
+  }
+  .mardiGrasEvent_Box ul li p:nth-of-type(2) {
+    /* time small yellow  */
+    font-size: 0.8em;
+  }
+  .mardiGrasEvent_Box ul li a {
+    /* hottles wieth */
+    font-size: 0.7em;
+    margin: 15px 2px;
+  }
+
+  .body_section {
+    margin-top: 8em;
+  }
+
+  .covid_warning {
+    width: 20em;
+    margin-left: 20%;
+  }
+
+  .covid_warning h3 {
+    font-size: 1em;
+  }
+
+  .covid_warning p {
+    font-size: 0.7em;
+  }
+
+  .covid_warning a {
+    font-size: 1.2em;
+  }
+
+  .faq_teaser {
+    width: 20em;
+    margin-left: 20%;
+    margin-top: 2em;
+  }
+  .txt_color1 {
+    font-size: 0.7em;
+  }
+
+  .txt_color2 {
+    font-size: 0.6em;
+  }
+
+  .txt_color3 {
+    font-size: 0.9em;
+  }
+
+  .mayor_teaser {
+    margin-left: 15%;
+    width: 23em;
+  }
+  .mayor_teaser img {
+    width: 7em;
+  }
+
+  .pics_types_of_groups h5 {
+    font-size: 0.7em;
+    width: 120px;
+  }
+
+  .small_hotles__pics {
+    margin-left: 5em;
+  }
+
+  .small_attractions_pics {
+    width: 180px;
+  }
+
+  .popup_location p {
+    font-size: 1.75em;
+  }
+
+  .sponsers_section {
+    height: 550px;
+  }
+  .poscard_popup img {
+    width: 40vh;
+  }
+  .grid_headline_attractions span {
+    font-size: 1.5em;
+  }
+
+  .grid_headline_hotls span {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  .covid_warning {
+    width: 20em;
+    margin-left: 5%;
+  }
+
+  .covid_warning h3 {
+    font-size: 0.8em;
+  }
+
+  .covid_warning p {
+    font-size: 0.6em;
+  }
+
+  .covid_warning a {
+    font-size: 1em;
+  }
+
+  .faq_teaser {
+    width: 20em;
+    margin-left: 5%;
+  }
+
+  .mayor_teaser {
+    margin-left: 2%;
+    width: 20em;
+  }
+
+  .poscard_popup img {
+    background-size: cover;
+  }
+
+  .small_pic img {
+    width: 5em;
+    height: 5em;
+  }
+  .pics_types_of_groups h5 {
+    font-size: 0.7em;
+    width: 120px;
+  }
+
+  .small_attractions_pics {
+    width: 130px;
+  }
+  .small_hotles__pics {
+    margin-left: 0px;
+  }
+
+  .popup_location p {
+    font-size: 1.25em;
+  }
+
+  .sponsers_section {
+    height: 450px;
+  }
+  .poscard_popup img {
+    width: 40vh;
+  }
+
+  .grid_headline_attractions span {
+    font-size: 1em;
+  }
+
+  .grid_headline_hotls span {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 350px) {
+  .movie_container {
+    width: 80vw;
+  }
+  .backgroundVideo {
+    width: 80vw;
+  }
+  .placeholder {
+    width: 80vw;
+  }
+
+  .first_look_txt h2 {
+    /* green big first header */
+    font-size: 1.6em;
+  }
+  .first_look_txt p {
+    /* purpel big header */
+    font-size: 1.3em;
+  }
+
+  .mardiGrasEvent_Box ul li {
+    width: 28vw;
+    height: fit-content;
+    margin: 20px 3px;
+  }
+
+  .covid_warning {
+    width: 17em;
+    margin-left: 7%;
+  }
+
+  .covid_warning h3 {
+    font-size: 0.8em;
+  }
+
+  .covid_warning p {
+    font-size: 0.6em;
+  }
+
+  .covid_warning a {
+    font-size: 1em;
+  }
+
+  .faq_teaser {
+    width: 17em;
+    margin-top: 3em;
+    margin-left: 7%;
+  }
+
+  .txt_color1 {
+    font-size: 0.6em;
+  }
+
+  .txt_color2 {
+    font-size: 0.5em;
+  }
+
+  .txt_color3 {
+    font-size: 0.7em;
+  }
+
+  .mayor_teaser {
+    margin-left: 0px;
+    margin-bottom: 0.5em;
+    left: 0px;
+    width: 18em;
+  }
+
+  .mayor_teaser img {
+    width: 6em;
+  }
+
+  .mayor_teaser p {
+    font-size: 0.6em;
+  }
+
+  .small_pic img {
+    width: 4.2em;
+    height: 4.2em;
+  }
+
+  .pics_types_of_groups {
+    height: 350px;
+    width: 125px;
+  }
+
+  .pics_types_of_groups h5 {
+    font-size: 0.7em;
+    width: 120px;
+  }
+
+  .small_attractions_pics {
+    width: 120px;
+  }
+  .small_hotles__pics {
+    margin-left: 0px;
+  }
+
+  .popup_location p {
+    font-size: 0.8em;
+  }
+}
+
+#mayor_teaser:hover {
+  cursor: pointer;
+}
